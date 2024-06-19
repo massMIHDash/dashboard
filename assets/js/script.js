@@ -27,6 +27,27 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log(obj);
             console.log(obj.address);
         });
+
+        dataObject.forEach(provider => {
+            if (typeof provider.lat != "undefined") {
+                console.log(provider);
+                const marker = L.marker([provider.lat, provider.lng]).addTo(map);
+                const popupContent = `
+                            <b>${provider.primary_contact}</b><br>
+                            ${provider.address}<br>
+                            ${provider.phone}<br>
+                            ${provider.email}<br>
+                            ${provider.services}<br>
+                            ${provider.funding}
+                        `;
+                marker.bindPopup(popupContent);
+    
+                // Add click event listener to the marker
+                marker.on('click', () => {
+                    updateDetails(provider);
+                });
+            } 
+        });
     })
         .fail(function (response) {
 
@@ -36,26 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-    obj.forEach(provider => {
-        if (typeof provider.lat != "undefined") {
-            console.log(provider);
-            const marker = L.marker([provider.lat, provider.lng]).addTo(map);
-            const popupContent = `
-                        <b>${provider.primary_contact}</b><br>
-                        ${provider.address}<br>
-                        ${provider.phone}<br>
-                        ${provider.email}<br>
-                        ${provider.services}<br>
-                        ${provider.funding}
-                    `;
-            marker.bindPopup(popupContent);
-
-            // Add click event listener to the marker
-            marker.on('click', () => {
-                updateDetails(provider);
-            });
-        } 
-    });
+    
 
     document.getElementById('self-referral-filter').addEventListener('change', () => applyFilters(data, map));
     document.getElementById('funding-filter').addEventListener('change', () => applyFilters(data, map));
