@@ -9,8 +9,12 @@
 }
 
 h5.provider-title{
-    font-size: 1rem;;
+    font-size: 1rem;
 }
 p.provider-detail{
     font-size: .85rem;
+}
+
+p.provider-detail-name{
+    margin-bottom: 0.3rem;
 }
