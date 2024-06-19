@@ -1,299 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>MIH Dashboard</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">MIH Dashboard</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map">Map</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-         <!-- Map Content-->
-        <section class="resume-section" id="experience">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Map</h2>
-                <div id="filters" class="row mb-4">
-                    <div class="col-md-3">
-                        <select id="self-referral-filter" class="form-control">
-                            <option value="">Patient Self-Referral Allowed</option>
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <select id="funding-filter" class="form-control">
-                            <option value="">Funding</option>
-                            <option value="Medicare/Medicaid">Medicare/Medicaid</option>
-                            <option value="Private Insurance">Private Insurance</option>
-                            <option value="Parent Organization">Parent Organization</option>
-                            <option value="Patients Self-Pay">Patients Self-Pay</option>
-                            <option value="Philanthropy">Philanthropy</option>
-                            <option value="Federal Government">Federal Government</option>
-                            <option value="State Government">State Government</option>
-                            <option value="Grant Awards">Grant Awards</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
-                    <div class="col-md-3">
-                        <select id="services-provided-filter" class="form-control">
-                            <option value="">Services Provided</option>
-                            <option value="Acute Medical Illnesses">Acute Medical Illnesses</option>
-                            <option value="Alternative Destination Transport">Alternative Destination Transport</option>
-                            <option value="Hospital Dismissal/Readmission Prevention">Hospital Dismissal/Readmission Prevention</option>
-                            <option value="Post-response follow-up for certain emergencies">Post-response follow-up for certain emergencies</option>
-                            <option value="Diabetic counseling and monitoring">Diabetic counseling and monitoring</option>
-                            <option value="Chronic Disease Management & Care Coordination">Chronic Disease Management & Care Coordination</option>
-                            <option value="Decreased ED Utilization by High-Utilizer Patients">Decreased ED Utilization by High-Utilizer Patients</option>
-                            <option value="Substance Abuse Treatment">Substance Abuse Treatment</option>
-                            <option value="Behavioral Health">Behavioral Health</option>
-                            <option value="OB/Newborn Management">OB/Newborn Management</option>
-                            <option value="Elder Care">Elder Care</option>
-                            <option value="Fall Prevention">Fall Prevention</option>
-                            <option value="Immunization and Vaccination">Immunization and Vaccination</option>
-                            <option value="Home Health Partnership">Home Health Partnership</option>
-                            <option value="Hospice Partnership">Hospice Partnership</option>
-                            <option value="Other">Other</option>
-                        </select>
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>MIH Dashboard</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+            <span class="d-block d-lg-none">MIH Dashboard</span>
+            <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.png" alt="..."></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#map">Map</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Page Content-->
+    <!-- Map Content-->
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content">
+            <h2 class="mb-5">Massachusetts MIH Dashboard</h2>
+            <div id="filters" class="row mb-4">
+                <div class="col-md-3">
+                    <select id="self-referral-filter" class="form-control">
+                        <option value="">Patient Self-Referral Allowed</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
                 </div>
-                <div class="row">
-                    <div id="map" class="col-md-8 mb-4"></div>
-                    <div id="details" class="col-md-3">
-                        <div class="card">
-                            <div class="card-header">
-                                Provider Details
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title" id="provider-name"></h5>
-                                <p class="card-text" id="provider-contact"></p>
-                                <p class="card-text" id="provider-phone"></p>
-                                <p class="card-text" id="provider-email"></p>
-                                <p class="card-text" id="provider-address"></p>
-                                <p class="card-text" id="provider-services"></p>
-                                <p class="card-text" id="provider-funding"></p>
-                                <p class="card-text" id="provider-self-referral"></p>
-                            </div>
+                <div class="col-md-3">
+                    <select id="funding-filter" class="form-control">
+                        <option value="">Funding</option>
+                        <option value="Medicare/Medicaid">Medicare/Medicaid</option>
+                        <option value="Private Insurance">Private Insurance</option>
+                        <option value="Parent Organization">Parent Organization</option>
+                        <option value="Patients Self-Pay">Patients Self-Pay</option>
+                        <option value="Philanthropy">Philanthropy</option>
+                        <option value="Federal Government">Federal Government</option>
+                        <option value="State Government">State Government</option>
+                        <option value="Grant Awards">Grant Awards</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <select id="services-provided-filter" class="form-control">
+                        <option value="">Services Provided</option>
+                        <option value="Acute Medical Illnesses">Acute Medical Illnesses</option>
+                        <option value="Alternative Destination Transport">Alternative Destination Transport</option>
+                        <option value="Hospital Dismissal/Readmission Prevention">Hospital Dismissal/Readmission Prevention</option>
+                        <option value="Post-response follow-up for certain emergencies">Post-response follow-up for certain emergencies</option>
+                        <option value="Diabetic counseling and monitoring">Diabetic counseling and monitoring</option>
+                        <option value="Chronic Disease Management & Care Coordination">Chronic Disease Management & Care Coordination</option>
+                        <option value="Decreased ED Utilization by High-Utilizer Patients">Decreased ED Utilization by High-Utilizer Patients</option>
+                        <option value="Substance Abuse Treatment">Substance Abuse Treatment</option>
+                        <option value="Behavioral Health">Behavioral Health</option>
+                        <option value="OB/Newborn Management">OB/Newborn Management</option>
+                        <option value="Elder Care">Elder Care</option>
+                        <option value="Fall Prevention">Fall Prevention</option>
+                        <option value="Immunization and Vaccination">Immunization and Vaccination</option>
+                        <option value="Home Health Partnership">Home Health Partnership</option>
+                        <option value="Hospice Partnership">Hospice Partnership</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div id="map" class="col-md-8 mb-4"></div>
+                <div id="details" class="col-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            Provider Details
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" id="provider-name"></h5>
+                            <p class="card-text" id="provider-contact"></p>
+                            <p class="card-text" id="provider-phone"></p>
+                            <p class="card-text" id="provider-email"></p>
+                            <p class="card-text" id="provider-address"></p>
+                            <p class="card-text" id="provider-services"></p>
+                            <p class="card-text" id="provider-funding"></p>
+                            <p class="card-text" id="provider-self-referral"></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <hr class="m-0" />
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        What is Mobile Integrated Healthcare?
-                    </h1>
-                    <p class="lead mb-5">Mobile integrated healthcare (MIH) is a healthcare delivery model that brings medical services outside of traditional healthcare settings like hospitals and clinics. It involves a team-based approach where healthcare professionals, such as paramedics, nurses, and physicians, provide care in various locations such as homes, community centers, workplaces, and even during events or emergencies. The goal is to make healthcare more accessible and convenient for everyone, especially those who may have difficulty getting to a doctor or hospital.</p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="#!"></a>
-                        <a class="social-icon" href="#!"></a>
-                        <a class="social-icon" href="#!"></a>
-                        <a class="social-icon" href="#!"></a>
+        </div>
+    </section>
+    <hr class="m-0">
+    <div class="container-fluid p-0">
+        <!-- About-->
+        <section class="resume-section" id="about">
+            <div class="resume-section-content">
+                <h3 class="mb-2">
+                    What is Mobile Integrated Healthcare?
+                </h3>
+                <p class="lead mb-5">Mobile integrated healthcare (MIH) is a healthcare delivery model that brings medical services outside of traditional healthcare settings like hospitals and clinics. It involves a team-based approach where healthcare professionals, such as paramedics, nurses, and physicians, provide care in various locations such as homes, community centers, workplaces, and even during events or emergencies. The goal is to make healthcare more accessible and convenient for everyone, especially those who may have difficulty getting to a doctor or hospital.</p>
+<h4>The key features of mobile integrated healthcare include:</h4>
+                <div class="container mt-4 mb-4">
+                    <div class="row mb-4">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Care Coordination and Continuity</h5>
+                                    <p class="card-text">MIH providers prioritize seamless transitions between care settings. They coordinate with primary care providers, specialists, hospitals, and community resources to ensure continuity of care and optimal patient outcomes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Patient-Centered Care</h5>
+                                    <p class="card-text">MIH focuses on meeting patients where they are, whether it's at home, work, or in the community. This approach emphasizes convenience for patients and aims to improve health outcomes by addressing barriers to accessing healthcare.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Team-Based Approach</h5>
+                                    <p class="card-text">MIH typically involves interdisciplinary teams that may include paramedics, nurses, physicians, social workers, and other healthcare professionals. These teams collaborate closely to provide holistic care that considers both medical and social determinants of health.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="container mt-4">
-                        <div class="row">
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Care Coordination and Continuity</h5>
-                                        <p class="card-text">MIH providers prioritize seamless transitions between care settings. They coordinate with primary care providers, specialists, hospitals, and community resources to ensure continuity of care and optimal patient outcomes.</p>
-                                    </div>
+                    <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Technology and Telehealth</h5>
+                                <p class="card-text">MIH may incorporate telehealth and digital health tools to enhance communication, monitor patient health remotely, and facilitate virtual consultations. <br> <br>These technologies support efficient care delivery and patient engagement, and help decrease barriers to accessing care especially in rural and underserved areas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Preventive Care and Chronic Disease Management</h5>
+                                <p class="card-text">MIH places a strong emphasis on preventive care and managing chronic diseases. Providers work proactively to educate patients, monitor their health status, and intervene early to prevent exacerbations and hospitalizations. MIH teams develop personalized care plans tailored to the specific needs of patients, addressing both medical and social determinants of health.</p>
+                            </div>
+                        </div>
+                    </div>
+  
+                </div>
+                </div>
+
+
+                <div class="container mt-4">
+                    <hr class="mt-4">
+                    <h4 class="mt-4">Looking for Mobile Integrated Health services outside of Massachusetts?</h4>
+                    <p>The following tips may help:</p>
+                    <div class="accordion mt-4" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Contact Local Hospitals and Health Systems
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Start by reaching out to hospitals and healthcare systems in your area. They may have information about MIH programs or can direct you to organizations that provide these services.
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Technology and Telehealth</h5>
-                                        <p class="card-text">MIH may incorporate telehealth and digital health tools to enhance communication, monitor patient health remotely, and facilitate virtual consultations. These technologies support efficient care delivery and patient engagement, and help decrease barriers to accessing care especially in rural and underserved areas.</p>
-                                    </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Emergency Medical Services (EMS) Providers
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Contact your local EMS providers or ambulance services. MIH programs often collaborate closely with EMS, so they may have information about MIH initiatives in your community.
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Patient-Centered Care</h5>
-                                        <p class="card-text">MIH focuses on meeting patients where they are, whether it's at home, work, or in the community. This approach emphasizes convenience for patients and aims to improve health outcomes by addressing barriers to accessing healthcare.</p>
-                                    </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Community Health Centers
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Community health centers and clinics sometimes collaborate with MIH programs. Contact them to inquire about any mobile healthcare services they offer or are aware of in the area.
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Team-Based Approach</h5>
-                                        <p class="card-text">MIH typically involves interdisciplinary teams that may include paramedics, nurses, physicians, social workers, and other healthcare professionals. These teams collaborate closely to provide holistic care that considers both medical and social determinants of health.</p>
-                                    </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Public Health Departments
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Local public health departments may have information about MIH programs or initiatives focused on improving community health and access to healthcare services.
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Preventive Care and Chronic Disease Management</h5>
-                                        <p class="card-text">MIH places a strong emphasis on preventive care and managing chronic diseases. Providers work proactively to educate patients, monitor their health status, and intervene early to prevent exacerbations and hospitalizations. MIH teams develop personalized care plans tailored to the specific needs of patients, addressing both medical and social determinants of health.</p>
-                                    </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Online Resources and Directories
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Check online resources such as health department websites, community health directories, or nonprofit organizations dedicated to healthcare access. They may list MIH programs or provide contacts for further information.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Healthcare Providers and Physicians
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Primary care providers, specialists, and physicians in your community may be aware of MIH programs or could refer you to relevant services.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Local Government and Nonprofit Organizations
+                                </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Reach out to local government health departments or nonprofit organizations involved in healthcare delivery or community health initiatives. They may have information about MIH programs or initiatives.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                    Community Events and Health Fairs
+                                </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Sometimes MIH programs participate in community events or health fairs to raise awareness. Attend such events to learn more about available healthcare services in your area.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingNine">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                    Determine if MIH is Right for You
+                                </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    Consider discussing your healthcare needs with your primary care provider or contacting local healthcare organizations that offer MIH services. They can provide more information, assess your eligibility, and help you decide if mobile integrated healthcare is a suitable option for improving your health and well-being.
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <h1 class="mb-0">
-                        What is Mobile Integrated Healthcare?
-                    </h1>
-                
+                    <p class="mt-5">
+                        By contacting these sources and asking specific questions about mobile integrated health programs, you can gather information about what services are available in your community and how to access them.
+                    </p>
+                    <p>
+                        To determine if MIH is right for you, consider discussing your healthcare needs with your primary care provider or contacting local healthcare organizations that offer MIH services. They can provide more information, assess your eligibility, and help you decide if mobile integrated healthcare is a suitable option for improving your health and well-being.   
+                    </p>
+                    <h3>Thank You!</h3>
+                    <p>Overall, MIH in Massachusetts exemplifies a comprehensive approach to healthcare delivery that emphasizes patient-centered care, interdisciplinary collaboration, technology integration, and community engagement. These initiatives aim to address healthcare disparities, improve health outcomes, and enhance the overall well-being of residents throughout the Commonwealth. We thank the Massachusetts Office of EMS and Department of Public Health for recognizing the importance of Mobile Integrated Health in Massachusetts, and the Massachusetts College of Emergency Physicians for their generous grant award which has supported the creation and ongoing maintenance of the Massachusetts MIH Dashboard.</p>
+                    <p><strong>Don’t see your Mobile Integrated Health program listed or have questions about the Massachusetts MIH Dashboard? Please reach out by email at MassachusettsMIHDashboard@gmail.com</p>
                 </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-           
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">University of Colorado Boulder</h3>
-                            <div class="subheading mb-3">Bachelor of Science</div>
-                            <div>Computer Science - Web Development Track</div>
-                            <p>GPA: 3.23</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">James Buchanan High School</h3>
-                            <div class="subheading mb-3">Technology Magnet Program</div>
-                            <p>GPA: 3.56</p>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages & Tools</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-js-square"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-angular"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-react"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-node-js"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-sass"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-less"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-wordpress"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-gulp"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-grunt"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-npm"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Workflow</div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Mobile-First, Responsive Design
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Browser Testing & Debugging
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Cross Functional Teams
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-check"></i></span>
-                            Agile Development & Scrum
-                        </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-                    <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Google Analytics Certified Developer
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            Mobile Web Specialist - Google Certification
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            2
-                            <sup>nd</sup>
-                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            1
-                            <sup>st</sup>
-                            Place - James Buchanan High School - Hackathon 2006
-                        </li>
-                        <li>
-                            <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                            3
-                            <sup>rd</sup>
-                            Place - James Buchanan High School - Hackathon 2005
-                        </li>
-                    </ul>
-                </div>
-            </section>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start mt-5">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            &copy; 2024 MIH Dashboard | 🎨
         </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    </footer>
+
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
 </html>
