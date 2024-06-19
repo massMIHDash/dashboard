@@ -24,8 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
             row.forEach((cell, index) => {
                 obj[keys[index]] = cell;
             });
-            console.log(obj);
-            console.log(obj.address);
+            return obj;
         });
 
         dataObject.forEach(provider => {
