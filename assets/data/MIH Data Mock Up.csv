@@ -1,15 +1,15 @@
-,Primary Contact Name and Title,Phone Number,Email Address,Address,Website (If Existing),Operational Hours,Services Provided,Funding,Self-Referral Allowed (yes/no)
+,Primary Contact Name and Title,Phone Number,Email Address,Address,lat,lng,Website (If Existing),Operational Hours,Services Provided,Funding,Self-Referral Allowed (yes/no)
 Boston EMS,"Laura Segal, Chief of Staff",617-343-1143,"segal@bostonems.org 
-",,,,,,
-"InstED, LLC - Point32 Health","Jennifer Femino, Sr. Director of Ops",857-329-5513,jfemino@commonwealthcare.org ,,,,,,
+",,,,,,,,
+"InstED, LLC - Point32 Health","Jennifer Femino, Sr. Director of Ops",857-329-5513,jfemino@commonwealthcare.org,,,,,,,,
 Baystate Medical Center,"Kyle Deskus, Assistant General Council",413-794-7559,"kyle.deskus@baystatehealth.org 
-",,,,,,
-SmartCare / Cataldo,"Karen Host, Sr. Clinical Director",617-873-4306,khost@cataldoambulance.com ,,,,,,
-Medically Home - MGH Physician Services (Mass General Brigham),"Sean Kukauskas, Executive Director",857-210-5891,skukauskas@mgb.org ,"500 Harrison Avenue, Boston, MA 02118",https://medicallyhome.com,"Monday through Sunday, 24 hours a day","Acute Medical Illnesses, Hospital Dismissal/Readmission Prevention, Post-response follow up for certain emergencies, Chronic disease management and care coordination, Home Health Partnership, Other","Insurance, Parent Organization, Federal Government, State Government, Other",Yes
-City of Fall River Community Medicine,508-324-2744,508-324-2744,nsilva@frfd.org ,,,,,,
-UMass Memorial Medical Center,"Laurel O’Connor (MD), Medical Director",508-421-5588,laureloconnor@umassmemorial.org ,"55 North Lake Avenue, Worcester, MA ",N/A,"Monday through Sunday, 24 hours a day","Acute Medical Illnesses, Hospital Dismissal/Readmission Prevention, Post-response follow-up for certain emergencies, Chronic disease management and care coordination, Substance abuse treatment/Post-overdose follow-up, Elder Care, Immunization and Vaccinations, Home Health Partnership, Hospice Partnership","Insurance, Parent Organization, Other",No
-"InstED, LLC","Chris Malagrida, COO/Chief Compliance Officer",617-866-8062,cmalagrida@insted.us ,,,,,,
-South Shore Hospital,"Eugene Duffy, Director of EMS",781-624-8382,eduffy@southshorehealth.org ,,,,,,
-Brewster Ambulance Service,"Stephanie Fagan, MIH Director",617-237-7655,sfagan@brewsterambulance.com,,,,,,
-Costal Ambulance Service/Estella Health,"Brendan Hayden, COO",508-922-8099,bhayden@cmtsus.com,,,,,,
-Lowell General Hospital ,"Casey Rainville, Director of ALS",978-937-6202,casey.rainville@lowellgeneral.org ,,,,,,
+",,,,,,,,
+SmartCare / Cataldo,"Karen Host, Sr. Clinical Director",617-873-4306,khost@cataldoambulance.com,,,,,,,,
+Medically Home - MGH Physician Services (Mass General Brigham),"Sean Kukauskas, Executive Director",857-210-5891,skukauskas@mgb.org,"500 Harrison Avenue, Boston, MA 02118",42.3421034,-71.0684686,https://medicallyhome.com,"Monday through Sunday, 24 hours a day","Acute Medical Illnesses, Hospital Dismissal/Readmission Prevention, Post-response follow up for certain emergencies, Chronic disease management and care coordination, Home Health Partnership, Other","Insurance, Parent Organization, Federal Government, State Government, Other",Yes
+City of Fall River Community Medicine,508-324-2744,508-324-2744,nsilva@frfd.org,,,,,,,,
+UMass Memorial Medical Center,"Laurel O’Connor (MD), Medical Director",508-421-5588,laureloconnor@umassmemorial.org,"55 North Lake Avenue, Worcester, MA ",,,N/A,"Monday through Sunday, 24 hours a day","Acute Medical Illnesses, Hospital Dismissal/Readmission Prevention, Post-response follow-up for certain emergencies, Chronic disease management and care coordination, Substance abuse treatment/Post-overdose follow-up, Elder Care, Immunization and Vaccinations, Home Health Partnership, Hospice Partnership","Insurance, Parent Organization, Other",No
+"InstED, LLC","Chris Malagrida, COO/Chief Compliance Officer",617-866-8062,cmalagrida@insted.us,,,,,,,,
+South Shore Hospital,"Eugene Duffy, Director of EMS",781-624-8382,eduffy@southshorehealth.org,,,,,,,,
+Brewster Ambulance Service,"Stephanie Fagan, MIH Director",617-237-7655,sfagan@brewsterambulance.com,,,,,,,,
+Costal Ambulance Service/Estella Health,"Brendan Hayden, COO",508-922-8099,bhayden@cmtsus.com,,,,,,,,
+Lowell General Hospital,"Casey Rainville, Director of ALS",978-937-6202,casey.rainville@lowellgeneral.org,,,,,,,,
