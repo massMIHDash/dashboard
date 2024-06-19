@@ -12,19 +12,24 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = Papa.parse(csvText, { header: true }).data;
 
             data.forEach(provider => {
-                if(typeof provider.lat != "undefined"){
-                console.log(provider);
-                const marker = L.marker([provider.lat, provider.lng]).addTo(map);
-                marker.bindPopup(`
-                    <b>${provider["Primary Contact Name and Title"]}</b><br>
-                    ${provider.Address}<br>
-                    ${provider["Phone Number"]}<br>
-                    ${provider["Email Address"]}<br>
-                    ${provider["Services Provided"]}<br>
-                    ${provider.Funding}
-                `);
-                }
-                else{
+                if (typeof provider.lat != "undefined") {
+                    console.log(provider);
+                    const marker = L.marker([provider.lat, provider.lng]).addTo(map);
+                    const popupContent = `
+                        <b>${provider["Primary Contact Name and Title"]}</b><br>
+                        ${provider.Address}<br>
+                        ${provider["Phone Number"]}<br>
+                        ${provider["Email Address"]}<br>
+                        ${provider["Services Provided"]}<br>
+                        ${provider.Funding}
+                    `;
+                    marker.bindPopup(popupContent);
+
+                    // Add click event listener to the marker
+                    marker.on('click', () => {
+                        updateDetails(provider);
+                    });
+                } else {
                     console.log('no address for', provider);
                 }
             });
@@ -52,15 +57,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (matchesSelfReferral && matchesFunding && matchesServicesProvided) {
                 const marker = L.marker([provider.lat, provider.lng]).addTo(map);
-                marker.bindPopup(`
+                const popupContent = `
                     <b>${provider["Primary Contact Name and Title"]}</b><br>
                     ${provider.Address}<br>
                     ${provider["Phone Number"]}<br>
                     ${provider["Email Address"]}<br>
                     ${provider["Services Provided"]}<br>
                     ${provider.Funding}
-                `);
+                `;
+                marker.bindPopup(popupContent);
+
+                // Add click event listener to the marker
+                marker.on('click', () => {
+                    updateDetails(provider);
+                });
             }
         });
+    }
+
+    function updateDetails(provider) {
+        document.getElementById('provider-name').innerText = provider["Primary Contact Name and Title"];
+        document.getElementById('provider-contact').innerText = provider["Primary Contact Name and Title"];
+        document.getElementById('provider-phone').innerText = provider["Phone Number"];
+        document.getElementById('provider-email').innerText = provider["Email Address"];
+        document.getElementById('provider-address').innerText = provider.Address;
+        document.getElementById('provider-services').innerText = provider["Services Provided"];
+        document.getElementById('provider-funding').innerText = provider.Funding;
+        document.getElementById('provider-self-referral').innerText = provider["Self-Referral Allowed (yes/no)"];
     }
 });
