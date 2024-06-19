@@ -13,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             data.forEach(provider => {
                 if(typeof provider.lat != "undefined"){
+                console.log(provider);
                 const marker = L.marker([provider.lat, provider.lng]).addTo(map);
                 marker.bindPopup(`
                     <b>${provider["Primary Contact Name and Title"]}</b><br>
