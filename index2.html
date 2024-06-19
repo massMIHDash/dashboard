@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIH Providers Map</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MIH Dashboard Massachusetts</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Map <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid">
+        <h1 class="my-4 text-center">MIH Providers in Massachusetts</h1>
+        <div id="filters" class="row mb-4">
+            <div class="col-md-3">
+                <select id="self-referral-filter" class="form-control">
+                    <option value="">Patient Self-Referral Allowed</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select id="funding-filter" class="form-control">
+                    <option value="">Funding</option>
+                    <option value="Medicare/Medicaid">Medicare/Medicaid</option>
+                    <option value="Private Insurance">Private Insurance</option>
+                    <option value="Parent Organization">Parent Organization</option>
+                    <option value="Patients Self-Pay">Patients Self-Pay</option>
+                    <option value="Philanthropy">Philanthropy</option>
+                    <option value="Federal Government">Federal Government</option>
+                    <option value="State Government">State Government</option>
+                    <option value="Grant Awards">Grant Awards</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <select id="services-provided-filter" class="form-control">
+                    <option value="">Services Provided</option>
+                    <option value="Acute Medical Illnesses">Acute Medical Illnesses</option>
+                    <option value="Alternative Destination Transport">Alternative Destination Transport</option>
+                    <option value="Hospital Dismissal/Readmission Prevention">Hospital Dismissal/Readmission Prevention</option>
+                    <option value="Post-response follow-up for certain emergencies">Post-response follow-up for certain emergencies</option>
+                    <option value="Diabetic counseling and monitoring">Diabetic counseling and monitoring</option>
+                    <option value="Chronic Disease Management & Care Coordination">Chronic Disease Management & Care Coordination</option>
+                    <option value="Decreased ED Utilization by High-Utilizer Patients">Decreased ED Utilization by High-Utilizer Patients</option>
+                    <option value="Substance Abuse Treatment">Substance Abuse Treatment</option>
+                    <option value="Behavioral Health">Behavioral Health</option>
+                    <option value="OB/Newborn Management">OB/Newborn Management</option>
+                    <option value="Elder Care">Elder Care</option>
+                    <option value="Fall Prevention">Fall Prevention</option>
+                    <option value="Immunization and Vaccination">Immunization and Vaccination</option>
+                    <option value="Home Health Partnership">Home Health Partnership</option>
+                    <option value="Hospice Partnership">Hospice Partnership</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div id="map" class="col-md-8 mb-4"></div>
+            <div id="details" class="col-md-3">
+                <div class="card">
+                    <div class="card-header">
+                        Provider Details
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title" id="provider-name"></h5>
+                        <p class="card-text" id="provider-contact"></p>
+                        <p class="card-text" id="provider-phone"></p>
+                        <p class="card-text" id="provider-email"></p>
+                        <p class="card-text" id="provider-address"></p>
+                        <p class="card-text" id="provider-services"></p>
+                        <p class="card-text" id="provider-funding"></p>
+                        <p class="card-text" id="provider-self-referral"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-lightblue text-center py-3">
+        <div class="container">
+            <p class="m-0">MIH Dashboard © 2024</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
