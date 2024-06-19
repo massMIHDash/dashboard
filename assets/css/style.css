@@ -10,6 +10,7 @@
 
 h5.provider-title{
     font-size: 1rem;
+    text-transform: none;
 }
 p.provider-detail{
     font-size: .85rem;
