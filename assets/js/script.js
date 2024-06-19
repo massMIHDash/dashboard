@@ -75,7 +75,7 @@ function applyFilters(data, map) {
     });
 
     data.forEach(provider => {
-        const matchesSelfReferral = !selfReferralFilter || provider.self-referral.toLowerCase() === selfReferralFilter.toLowerCase();
+        const matchesSelfReferral = !selfReferralFilter || provider.self_referral.toLowerCase() === selfReferralFilter.toLowerCase();
         const matchesFunding = !fundingFilter || provider.funding.toLowerCase().includes(fundingFilter.toLowerCase());
         const matchesServicesProvided = !servicesProvidedFilter || provider.services.toLowerCase().includes(servicesProvidedFilter.toLowerCase());
 
