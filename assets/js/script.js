@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${provider.Funding}
                 `);
                 }
+                else{
+                    console.log('no address for', provider);
+                }
             });
 
             document.getElementById('self-referral-filter').addEventListener('change', () => applyFilters(data, map));
