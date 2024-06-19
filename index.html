@@ -48,16 +48,16 @@ crossorigin=""></script>
         <div class="resume-section-content">
             <h2 class="mb-5">Massachusetts MIH Dashboard</h2>
             <div id="filters" class="row mb-4">
-                <div class="col-md-3" style="display: flex;">
-                    <div class="form-check mt-auto mb-auto">
-                        <input id="self-referral-filter" type="checkbox" class=" form-check-input" >
-
-                    <label class="form-check-label" for="self-referral-filter">Patient Self-Referral Allowed</label>
-                    </div>
+                <div class="col-md-3">
+                    <label for="self-referral-filter">Patient Self-Referral Allowed</label>
+                    <select id="self-referral-filter" class="form-control" >
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
                 </div>
                 <div class="col-md-3">
+                    <label for="funding-filter">Funding</label>
                     <select multiple id="funding-filter" class="form-control">
-                        <option value="">Funding</option>
                         <option value="Medicare/Medicaid">Medicare/Medicaid</option>
                         <option value="Private Insurance">Private Insurance</option>
                         <option value="Parent Organization">Parent Organization</option>
@@ -70,8 +70,9 @@ crossorigin=""></script>
                     </select>
                 </div>
                 <div class="col-md-3">
+                    <label for="services-provided-filter">Services Provided</label>
+
                     <select multiple id="services-provided-filter" class="form-control">
-                        <option value="">Services Provided</option>
                         <option value="Acute Medical Illnesses">Acute Medical Illnesses</option>
                         <option value="Alternative Destination Transport">Alternative Destination Transport</option>
                         <option value="Hospital Dismissal/Readmission Prevention">Hospital Dismissal/Readmission Prevention</option>
@@ -93,7 +94,7 @@ crossorigin=""></script>
             </div>
             <div class="row">
                 <div id="map" class="col-md-8 mb-4"></div>
-                <div id="details" class="col-md-3">
+                <div id="details" class="col-md-4">
                     <div class="card">
                         <div class="card-header">
                             Provider Details
