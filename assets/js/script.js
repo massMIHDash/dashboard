@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const data = Papa.parse(csvText, { header: true }).data;
 
             data.forEach(provider => {
+                if(typeof provider.lat != "undefined"){
                 const marker = L.marker([provider.lat, provider.lng]).addTo(map);
                 marker.bindPopup(`
                     <b>${provider["Primary Contact Name and Title"]}</b><br>
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     ${provider["Services Provided"]}<br>
                     ${provider.Funding}
                 `);
+                }
             });
 
             document.getElementById('self-referral-filter').addEventListener('change', () => applyFilters(data, map));
