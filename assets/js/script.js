@@ -106,7 +106,7 @@ function updateDetails(provider) {
     document.getElementById('provider-email').innerText = provider.email;
     document.getElementById('provider-address').innerText = provider.address;
     document.getElementById('provider-services').innerText = provider.services;
-    document.getElementById('provider-funding').innerText = provider.Funding;
-    document.getElementById('provider-self-referral').innerText = provider.self-referral;
+    document.getElementById('provider-funding').innerText = provider.funding;
+    document.getElementById('provider-self-referral').innerText = provider.self_referral;
 }
 ;
