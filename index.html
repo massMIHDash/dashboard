@@ -48,15 +48,15 @@ crossorigin=""></script>
         <div class="resume-section-content">
             <h2 class="mb-5">Massachusetts MIH Dashboard</h2>
             <div id="filters" class="row mb-4">
-                <div class="col-md-3">
-                    <select id="self-referral-filter" class="form-control">
-                        <option value="">Patient Self-Referral Allowed</option>
-                        <option value="yes">Yes</option>
-                        <option value="no">No</option>
-                    </select>
+                <div class="col-md-3" style="display: flex;">
+                    <div class="form-check mt-auto mb-auto">
+                        <input id="self-referral-filter" type="checkbox" class=" form-check-input" >
+
+                    <label class="form-check-label" for="self-referral-filter">Patient Self-Referral Allowed</label>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                    <select id="funding-filter" class="form-control">
+                    <select multiple id="funding-filter" class="form-control">
                         <option value="">Funding</option>
                         <option value="Medicare/Medicaid">Medicare/Medicaid</option>
                         <option value="Private Insurance">Private Insurance</option>
@@ -70,7 +70,7 @@ crossorigin=""></script>
                     </select>
                 </div>
                 <div class="col-md-3">
-                    <select id="services-provided-filter" class="form-control">
+                    <select multiple id="services-provided-filter" class="form-control">
                         <option value="">Services Provided</option>
                         <option value="Acute Medical Illnesses">Acute Medical Illnesses</option>
                         <option value="Alternative Destination Transport">Alternative Destination Transport</option>
