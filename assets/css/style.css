@@ -5,6 +5,7 @@ body {
 #map {
     height: 600px;
     width: 100%;
+    margin-left: 2em;
 }
 
 .bg-lightblue {
