@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // limited by referrer, shouldn't have issues with this being public
     var apiKey = 'AIzaSyDatSI9wOGlbY5YkNodG1ERC2Tng44BsgU';
 
-    var spreadsheetId = '19PCYqgDgeWs2LHhC3FXSOLlZwdfSnjrYsPdVp8hRNh0';
+    var spreadsheetId = '1q6nmlUQi2CXxqZp-36NDF9aWImoQ-FjydpY2L96OwKU';
 
     var range = "A1:L";
     const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?key=${apiKey}`;
